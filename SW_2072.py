@@ -1,11 +1,3 @@
-# Clear
-
-# T = int(input())
-# acc = 0;
-# for test_case in range(1, T + 1):
-# 	if test_case % 2 :
-#         acc += test_case
-# print(#T, acc)
 
 
 T = int(input())
