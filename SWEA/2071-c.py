@@ -15,4 +15,4 @@ T = int(input())
 for test_case in range(1, T+1):
     a = list(map(int, input().split()))
     avg = round(sum(a)/len(a))
-print(f'#{test_case} {avg}')
+    print(f'#{test_case} {avg}')

@@ -7,6 +7,15 @@
 # 동혁이가 발견한 흰색 피스의 개수가 주어졌을 때, 몇 개를 더하거나 빼야 올바른 세트가 되는지 구하는 프로그램을 작성하시오
 
 
-king, queen, look, bishop, knight, pawn = map(int, (input().split()))
+def missing_piece_count(white_pieces):
+    totals = {'king': 1, 'queen': 1, 'rook': 2,
+              'bishop': 2, 'knight': 2, 'pawn': 8}
+    for piece, count in white_pieces.items():
+        totals[piece] -= count
+    return totals
 
-print(king, queen, look, bishop, knight, pawn)
+
+white_pieces = {'king': 0, 'queen': 1, 'rook': 1,
+                'bishop': 2, 'knight': 2, 'pawn': 7}
+
+print(missing_piece_count(white_pieces))
