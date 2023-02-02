@@ -9,11 +9,6 @@ num = list(map(int, sys.stdin.readline()))
 
 # 99999999
 
-combos = [
-    [0, 1],
-    [0, 2],
-    [1, 2]
-]
 
 # 2. While the combination list is not empty,
 #    pop off a combination.
