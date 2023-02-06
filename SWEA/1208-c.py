@@ -1,3 +1,4 @@
+
 def get_max_idx():
     max_value = 0
     max_idx = -1
@@ -7,7 +8,6 @@ def get_max_idx():
             max_value = boxes[i]
             max_idx = i  # max를 구하면서, 갱신되는 시점의 idx까지 저장함.
     return max_idx
-    pass
 
 
 def get_min_idx():
@@ -18,7 +18,6 @@ def get_min_idx():
             min_value = boxes[i]
             min_idx = i
     return min_idx
-    pass
 
 
 for i in range(1, 11):
