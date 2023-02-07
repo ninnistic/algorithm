@@ -1,7 +1,5 @@
-
-for tc in range(1, 11):
-    def sort_nums(nums, n):
-        # 선택 정렬 사용하기
+def sort_nums(nums, n):
+    # 선택 정렬 사용하기
     for i in range(n-1):
         min_idx = i
         for j in range(i+1, n):
