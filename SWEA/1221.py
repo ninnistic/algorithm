@@ -1,7 +1,14 @@
 t = int(input())
-numbers = {'ZRO': 0, 'ONE': 1, 'TWO': 2, 'THR': 3, 'FOR': 4, 'FIV': 5,
-           'SIX': 6, 'SVN': 7, 'EGT': 8, 'NIN': 9}
 
-for _ in range(1, t+1):
-    tc_num, length = map(int, input().strip('#').split())
-    test_case = input().split()
+for i in range(1, t + 1):
+    tc, n = input().split()
+    n = int(n)
+    num_list = ['ZRO', 'ONE', 'TWO', 'THR',
+                'FOR', 'FIV', 'SIX', 'SVN', 'EGT', 'NIN']
+    num = list(map(str, input().split()))
+    print(f'#{i}')
+
+    for i in range(len(num_list)):
+        for j in range(n):
+            if num_list[i] == num[j]:
+                print(num_list[i], end=' ')
