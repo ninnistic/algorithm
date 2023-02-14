@@ -1,9 +1,6 @@
-# 재귀의 귀재
-
 def recursion(s, l, r):
-    global counts
-    counts += 1
-
+    global cnt  # 전역 변수
+    cnt += 1
     if l >= r:
         return 1
     elif s[l] != s[r]:
@@ -18,7 +15,7 @@ def isPalindrome(s):
 
 t = int(input())
 
-for tc in range(t):
-    s = int(input())
-    counts = 0
-    print(isPalindrome(s), counts)
+for i in range(t):
+    s = input()
+    cnt = 0  # recursion 함수의 호출 횟수
+    print(isPalindrome(s), cnt)
